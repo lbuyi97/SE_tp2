@@ -20,4 +20,4 @@ De esta manera se pueden tener varios bloques de códigos (o programas enteros) 
 
 Ejemplo:
 
-![This is an image](/pre.png)
+![This is an image](./pre.png)
