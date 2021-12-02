@@ -24,4 +24,5 @@ b) A continuación se presenta una tabla de las funciones usadas en tickHook.c.
 |Función|Descripción de lo que hace|
 |:------------------------------------------------------------|:---------------------------------------------|
 |void myTickHook( void *ptr )|Función ejecutada cada vez que se produce un tick, enciende el puerto indicado por *ptr. La función está definida dentro de tickHook.c.|
-|boardConfig()|Macro definida en sapi_board.h como boardInit(), es decir, hace lo mismo que esta función, la cual prácticamente es la incialización del system core, cycles counter y puertos dependiendo de la placa utilizada|
+|boardConfig()|Macro definida en sapi_board.h como boardInit() (la cual está en sapi_board.c), es decir, hace lo mismo que esta función. Prácticamente es la incialización del system core, cycles counter y puertos dependiendo de la placa utilizada|
+|bool_t tickConfig(tick_t tickRateMSvalue )|Macro definida en sapi_tick.h como tickInit() (en sapi_tick.c). Realiza la inicialización del tick (timer dentro del core) y lo configura con un tick rate de tickRateMSvalue ms|
