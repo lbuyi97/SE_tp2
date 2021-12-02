@@ -30,3 +30,4 @@ typedef enum {
    UART_MAXNUM,
 } uartMap_t;
 ```
+En el caso del ejercicio se hace uso de la UART_USB, que como se indica en la estructura es Hardware UART2 por USB DEBUG. También tener en cuenta que en realidad hay solo tres UARTS disponibles (como dice ahí la UART1 no está routeada).
