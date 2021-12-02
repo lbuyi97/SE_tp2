@@ -1,15 +1,10 @@
 a)
-Lo que se pide es que según las definiciones y directivas que se le dan al preprocesador.
-Todo lo que esté dentro de una estructura como esta:
+Para compilación condicional se utilizan macros de la siguiente forma:
 ```
 #ifdef X_MACRO
 ...
 #endif
 ```
-
-
-será compilado unicamente si X_MACRO ha sido definida.
-
 También se admiten estructuras de este tipo:
 
 ```
@@ -18,9 +13,8 @@ También se admiten estructuras de este tipo:
 #endif
 ```
 
-en las cuales será compilado el bloque si X_MACRO está definido y vale X_VALOR.
+De este modo se va a compilar solo el código encerrado por ese #ifdef si se define anteriormente X_MACRO.
 
-De esta manera se pueden tener varios bloques de códigos (o programas enteros) dentro de un mismo archivo y "elegir" con un #define cuales de los bloques se quieren compilar.
 
 Ejemplo:
 
