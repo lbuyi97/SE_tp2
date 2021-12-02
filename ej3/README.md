@@ -22,5 +22,5 @@ Ejemplo:
 
 b) A continuación se presenta una tabla de las funciones usadas en tickHook.c.
 |Función|Descripción de lo que hace|
-|:-----:|:-------------------------------|
+|:------------------------------:|:------------------------------------------------------------------------|
 |a|b|
