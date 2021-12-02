@@ -19,3 +19,8 @@ De este modo se va a compilar solo el código encerrado por ese #ifdef si se def
 Ejemplo:
 
 ![This is an image](./pre.png)
+
+b) A continuación se presenta una tabla de las funciones usadas en tickHook.c.
+|Función|Descripción de lo que hace|
+|:-----:|:-------------------------------|
+|a|b|
