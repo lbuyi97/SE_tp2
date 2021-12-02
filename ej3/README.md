@@ -23,4 +23,4 @@ Ejemplo:
 b) A continuación se presenta una tabla de las funciones usadas en tickHook.c.
 |Función|Descripción de lo que hace|
 |:------------------------------------------------------------|:---------------------------------------------|
-|void myTickHook( void *ptr )|Función ejecutada cada vez que se produce un tick. Ptr son los parámetros pasados (en este caso que LED enciende).|
+|void myTickHook( void *ptr )|Función ejecutada cada vez que se produce un tick, está definida dentro de tickHook.c. Ptr son los parámetros pasados (en este caso que LED enciende).|
