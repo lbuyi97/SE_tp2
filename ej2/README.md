@@ -78,7 +78,7 @@ typedef struct {				/*!< GPIO_PORT Structure */
 } LPC_GPIO_T;
 ```
 
-La función 'ggpioWrite( gpioMap_t pin, bool_t value )' está desarrollada en el archivo 'sapi_gpio.c' y lo que hace es escribir el estado 'value' en el 'pin' que se le pase como parámetro. Esto lo hace con la función 'Chip_GPIO_SetPinState' definida en 'gpio_18xx_43xx.h' cuyo código es: 
+La función 'gpioWrite( gpioMap_t pin, bool_t value )' está desarrollada en el archivo 'sapi_gpio.c' y lo que hace es escribir el estado 'value' en el 'pin' que se le pase como parámetro. Esto lo hace con la función 'Chip_GPIO_SetPinState' definida en 'gpio_18xx_43xx.h' cuyo código es: 
 ```
 STATIC INLINE void Chip_GPIO_SetPinState(LPC_GPIO_T *pGPIO, uint8_t port, uint8_t pin, bool setting)
 {
