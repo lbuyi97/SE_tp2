@@ -31,4 +31,4 @@ b) A continuación se presenta una tabla de las funciones usadas en tickHook.c.
 
 Notar que inicialmente se iniciliza el 50 ms y cada vez que se quiera hacer un toggle a otro LED se debe llamar de vuelta a tickCallbackSet pasándole myTickHook y el nuevo LED como nuevo parámetro de la función myTickHook. Y antes de hacer esto se realiza un delay bloqueante de 1000 ms.
 
-![This is an image](./Ej3main.png)
+![This is an image](./Ej3Main.png)
