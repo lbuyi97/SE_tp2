@@ -29,3 +29,4 @@ b) A continuación se presenta una tabla de las funciones usadas en tickHook.c.
 |void myTickHook( void *ptr )|Función ejecutada cada vez que se produce un tick, enciende el puerto indicado por *ptr. La función está definida dentro de tickHook.c. Se le pasa esta función a tickCallBackSet para que la ponga como función a ejecutar en cada interrupción.|
 
 Notar que 
+![This is an image](./Ej3main.png)
