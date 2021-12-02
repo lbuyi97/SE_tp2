@@ -27,7 +27,8 @@ b) A continuación se presenta una tabla de las funciones usadas en tickHook.c.
 |bool_t tickConfig(tick_t tickRateMSvalue )|Macro definida en sapi_tick.h como tickInit() (en sapi_tick.c). Realiza la inicialización del tick (timer dentro del core) y lo configura con un tick rate de tickRateMSvalue. Devuelve false en el caso de que se quiera usar tickInit() con FreeRTOS.|
 |bool_t tickCallbackSet( callBackFuncPtr_t tickCallback, void* tickCallbackParams)|Función definida en sapi_tick.c, usada para setear la función que se ejecuta cada vez que el tick realiza una interrupción (tickHookFunction) como tickCallback con parámetros tickCallbackParams. Devuelve false si se quiere ejecutar con FreeRTOS o si tickCalback o tickCallBackParams son NULL|
 |void myTickHook( void *ptr )|Función ejecutada cada vez que se produce un tick, enciende el puerto indicado por *ptr. La función está definida dentro de tickHook.c. Se le pasa esta función a tickCallBackSet para que la ponga como función a ejecutar en cada interrupción.|
+|void delay( tick_t duration_ms )|Delay bloqueante durante duration_ms, lee el tickCounter (con tickRead) y no retorna hasta que el pase el tiempo  establecido por duration_ms (tiene en cuenta el tiempo de inicio del tick. Está definida en sapi_delay.c|
 
-Notar que inicialmente se iniciliza el $50 ms$ y cada vez que se quiera hacer un toggle a otro LED se debe llamar de vuelta a tickCallbackSet pasándole myTickHook y el nuevo LED como nuevo parámetro de la función myTickHook. Y antes de hacer esto se realiza un delay bloqueante de $1000 ms$.
+Notar que inicialmente se iniciliza el 50 ms y cada vez que se quiera hacer un toggle a otro LED se debe llamar de vuelta a tickCallbackSet pasándole myTickHook y el nuevo LED como nuevo parámetro de la función myTickHook. Y antes de hacer esto se realiza un delay bloqueante de 1000 ms.
 
 ![This is an image](./Ej3main.png)
